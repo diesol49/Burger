@@ -1,2 +1,2 @@
 # Burger
-users get to input burgers &amp; "devour" them with the click of a button
+Users can input burgers &amp; "devour" them with a click of a button
