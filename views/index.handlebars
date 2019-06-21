@@ -1,0 +1,27 @@
+<h1>Burgers</h1>
+
+<div id="to-eat">
+	<h3>Uneaten Burgers</h3>
+	<ul id="eat-list">
+		{{#each burgers}}
+			<li class="uneaten-burger">
+				{{this.burger_name}}
+				<button class="eat-btn" data-id="{{this.id}}">Bone Apple Tea</button>
+			</li>
+		{{/each}}
+	</ul>
+</div>
+
+<div id="ate">
+	<h3>Burgers You've Ate</h3>
+	<ul id="finished">
+		{{#each burgers}}
+			<li class="burger-done">{{this.burger_name}}</li>
+		{{/each}}
+	</ul>
+</div>
+
+<form class="create-form">
+	<input type="text" id="burgerName" placeholder="New Burger">
+	<button id="submitBurger">Submit</button>
+</form>
