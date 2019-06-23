@@ -4,7 +4,7 @@ const orm = require("../config/orm.js");
 var burger = {
 // This will display our burgers in the database
   selectAll: function(cb) {
-    orm.all("burgers", function(res) {
+    orm.selectAll("burgers", function(res) {
       cb(res);
     });
   },
