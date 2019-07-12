@@ -9,17 +9,16 @@ var burger = {
     });
   },
 // Adds a burger to the database
-  insertOne: function(cols, vals, cb) {
-    orm.create("burgers", cols, vals, function(res) {
-      cb(res);
-    });
+  create: function(name, cb) {
+    orm.create("burgers", ["burger_name", "devoured"], [name, false], cb);
   },
-// Will update our database to true when it gets devoured
-  updateOne: function(objColVals, condition, cb) {
-    orm.update("burgers", objColVals, condition, function(res) {
-      cb(res);
-    });
-  },
+// Will update our database from false to true when it gets devoured
+ updateOne: function(id, cb) {
+   var condition = "id=" + id;
+   orm.updateOne("burgers", {
+     devoured: true
+   }, condition, cb);
+ }
 // Deletes a burger from the database
   // deleteOne: function(condition, cb) {
   //   orm.delete("burgers", condition, function(res) {
