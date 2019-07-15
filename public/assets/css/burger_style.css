@@ -1,4 +1,74 @@
 body {
     background-image: URL(../img/krusty_krab.png);
     background-color: rgba(189, 84, 36, 0.74);
+    background-repeat: no-repeat;
+    background-size: 2700px 1500px;
+}
+
+input {
+    width: 10px;
+}
+
+
+#readytoeat {
+    background-image: url(../img/krabby.png);
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position-x: 70px;
+}
+
+#instructions {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    background-color: #8ebe35a8;
+    display: flex;
+    justify-content: center;
+}
+
+#eatit {
+    color: rgba(137, 43, 226, 0.795);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-top: 2px;
+    background-image: url(../img/squidward.jfif);
+    background-size: 80px 60px;
+    background-repeat: no-repeat; 
+}
+
+
+#ready {
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    
+}
+
+#devoured {
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(36, 240, 240, 0.329);
+    color: white;
+}
+
+#devouredimg {
+    background-image: url(../img/thighs.jpg);
+    background-position-x: 15px;
+    background-repeat: no-repeat;
+    background-size: 550px 300px;
+    
+}
+
+#top-bar {
+    background-image: url(../img/spongebob.jpg);
+    background-size: 100px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 20px;
+    background-position-x: 5px;
+}
+
+.burger_id {
+    width: 50px;
 }
